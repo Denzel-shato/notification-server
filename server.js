@@ -26,11 +26,11 @@ app.get('/', (req, res) => {
 
 app.post('/listen/:chatId', async (req, res) => {
   const { chatId } = req.params;
-  console.log(`📡 Now listening to chat: ${chatId}`);
+  console.log(`Now listening to chat: ${chatId}`);
   res.json({ success: true, chatId });
 });
 
 const PORT = process.env.PORT || 3001;
 app.listen(PORT, () => {
-  console.log(`🚀 Server running on port ${PORT}`);
+  console.log(`Server running on port ${PORT}`);
 });
